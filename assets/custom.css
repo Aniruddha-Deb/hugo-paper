@@ -1,1 +1,92 @@
 /* Place custom css here. */
+
+.project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  vertical-align: bottom;
+  padding-bottom: 4px;
+}
+
+.project-title {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.project-duration {
+  font-style: italic;
+  align-self: flex-end;
+}
+
+.spoiler-prompt {
+  color: gray;
+}
+
+.spoiler-text {
+  display: none;
+}
+
+.spoiler:hover .spoiler-text {
+  display:block;
+}
+
+.spoiler:active .spoiler-text {
+  display:block;
+}
+
+.spoiler:hover .spoiler-prompt {
+  display:none;
+}
+
+.spoiler:active .spoiler-prompt {
+  display:none;
+}
+
+.spoiler:hover {
+  overflow-y: auto;
+}
+
+.inline-spoiler {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.inline-spoiler::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  color: white;
+  background: black;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.inline-spoiler:hover::before {
+  opacity: 0;
+  transform: translateY(-50%)rotateX(80deg);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.text-\[2.4rem\] {
+  font-size: 2.4rem;
+}
+
+.MathJax { font-size: 1em !important; }
