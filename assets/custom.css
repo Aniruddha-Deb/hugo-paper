@@ -5,6 +5,10 @@
   padding-bottom: 1em;
 }
 
+img, video {
+    margin: auto;
+}
+
 .project-header {
   display: flex;
   flex-direction: row;
